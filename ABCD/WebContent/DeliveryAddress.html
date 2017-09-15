@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Shipment Details</title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="mycss.css">
+
+	<!--Including the JavaScript Code -->
+	<script src="verifyusingget.js"></script>
+</head>
+
+<body>
+	<center>
+		<h1>Delivery Address</h1>
+		<form class="myForm" method="get" style="background-color: #ccccff">
+			<p> <label>Name <input type="text" name="customer_name" required></label> </p>
+			<p> <label>Email <input type="email" name="email_address"> </label> </p>
+			<p> <label>Pincode<input type="text" name="pincode" id="pc" onchange="verify()"> </label></p>
+			<span id="msg">*(Delivery to Pincode guaranteed in:)</span>
+			<p><label>Delivery Address <textarea name="comments" maxlength="500"></textarea></label></p>
+			<p><button>Submit Enquiry</button></p>
+		</form>
+	</center>
+</body>
+</html>
